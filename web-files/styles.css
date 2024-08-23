@@ -1,0 +1,92 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #141414;
+  --text-primary: #ecf0f1;
+  --text-secondary: #95a5a6;
+  --accent-color: #e67e22;
+}
+::placeholder {
+  color: rgb(108, 108, 108);
+}
+body {
+  background-color: #00000000;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+.header-title {
+  font-family: 'Racing Sans One', cursive;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.bg-custom-dark {
+  background-color: #272727;
+}
+.text-custom-accent {
+  color: var(--accent-color);
+}
+.btn-custom-accent {
+  background-color: var(--accent-color);
+  color: #000000;
+  transition: all 0.3s ease;
+}
+.btn-custom-accent:hover {
+  background-color: var(--text-primary);
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(230,126,34,0.2);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+.sidebar {
+  height: calc(100vh - 70px);
+  position: sticky;
+  top: 70px;
+}
+.form-control, .form-select {
+  background-color: var(--bg-secondary);
+  color: #ffffff;
+  border-color: var(--text-secondary);
+}
+.form-control:focus, .form-select:focus {
+  background-color: var(--bg-secondary);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(230,126,34,0.25);
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+.price-tag {
+  background-color: var(--accent-color);
+  color: #00400a;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
