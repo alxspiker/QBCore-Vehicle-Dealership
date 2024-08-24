@@ -46,7 +46,7 @@ async function renderVehicles(filteredVehicles) {
       const card = $(`
         <div class="col">
           <div class="card h-100 bg-custom-dark border-0">
-            <img src="https://yoururl.users.cfx.re/FiveMMediaHost/media/${vehicle.model}.jpg" class="card-img-top" alt="${vehicle.name}" onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';">
+            <img src="https://yoururl.users.cfx.re/FiveMMediaHost/media/${vehicle.model}.webp" class="card-img-top" alt="${vehicle.name}" onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';">
             <div class="card-body">
               <h5 class="card-title text-custom-accent">${vehicle.name}</h5>
               <div class="price-tag">$${vehicle.price.toLocaleString()}</div>
@@ -92,7 +92,7 @@ function showVehicleDetails(vehicle) {
   modalContent.html(`
     <div class="row">
       <div class="col-md-6">
-        <img src="https://yoururl.users.cfx.re/FiveMMediaHost/media/${vehicle.model}.jpg" class="img-fluid rounded" alt="${vehicle.name}" onerror="this.src='https://via.placeholder.com/400x300?text=No+Image';">
+        <img src="https://yoururl.users.cfx.re/FiveMMediaHost/media/${vehicle.model}.webp" class="img-fluid rounded" alt="${vehicle.name}" onerror="this.src='https://via.placeholder.com/400x300?text=No+Image';">
       </div>
       <div class="col-md-6">
         <p class="fw-bold fs-4 text-custom-accent">${vehicle.name}</p>
